@@ -3,7 +3,9 @@
 .translate .original, .translate:hover .tslt {display: inline; }
 .translate:hover .original, .translate .tslt {display: none; }
 
-/* Masquer le logo ForumActif */
-#logo {
+/* Alternative si le logo est dans un autre conteneur */
+.headerbar #logo,
+.headerbar .logo,
+#pun-head #pun-logo {
     display: none !important;
 }
