@@ -13,9 +13,10 @@
   padding: 20px;
   transition: right 0.3s ease-in-out;
   z-index: 9999;
+  font-family: var(--font);
 }
 
-/* Quand elle est ouverte */
+/* Sidebar visible */
 #sidebar.open {
   right: 0;
 }
