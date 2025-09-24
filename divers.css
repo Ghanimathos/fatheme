@@ -3,39 +3,17 @@
 .translate .original, .translate:hover .tslt {display: inline; }
 .translate:hover .original, .translate .tslt {display: none; }
 
-/* === CORRECTIONS SPÉCIFIQUES === */
-
-/* Supprimer définitivement le logo ForumActif */
-#pun-head h1 span,
-#pun-head .pun-logo,
-.headerbar .logo img,
-#logo img,
-h1#pun-title span,
-#pun-head h1 {
-    display: none !important;
-    background: none !important;
-    text-indent: -9999px !important;
-    height: 0 !important;
-    overflow: hidden !important;
-}
-
-/* Centrer complètement la boîte INFORMATIONS */
-.pun .main .main-content,
-.pun .main-content,
-.main-head h2,
-.main-head .h2 {
+/* CSS très spécifique pour les messages d'information uniquement */
+body .main:has(.main-head):has(.main-content) {
     text-align: center !important;
 }
 
-.main-content .message,
-.main-content p,
-.pun .main-content .message {
+body .main .main-head h2:contains("INFORMATIONS"),
+body .main .main-head h2:contains("Information") {
     text-align: center !important;
-    margin: 10px auto !important;
 }
 
-.main-content a {
-    display: block !important;
+body .main .main-content .message {
     text-align: center !important;
-    margin: 5px auto !important;
+    padding: 15px !important;
 }
