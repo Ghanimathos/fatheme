@@ -1,0 +1,50 @@
+/* === Sidebar fixée à droite === */
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: -280px; /* cachée par défaut */
+  width: 280px;
+  height: 100%;
+  background: var(--neutral);
+  color: var(--textColor);
+  border-left: var(--border);
+  box-shadow: var(--shadowBox);
+  overflow-y: auto;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+/* Quand elle est ouverte */
+#sidebar.open {
+  right: 0;
+}
+
+/* Bouton toggle */
+#sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--accentClr);
+  border: none;
+  color: var(--neutral);
+  font-weight: bold;
+  font-size: var(--normal-size);
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: var(--shadowBox);
+}
+#sidebar-toggle:hover {
+  background: var(--accentClrDark);
+}
+
+/* Titres des blocs */
+#sidebar h2 {
+  font-size: var(--medium-size);
+  margin: 15px 0 8px;
+  padding-bottom: 4px;
+  border-bottom: var(--border);
+  color: var(--accentClr);
+}
