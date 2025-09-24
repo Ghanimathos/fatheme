@@ -2,18 +2,3 @@
 .original {border-bottom: 2px dotted var(--pink);}
 .translate .original, .translate:hover .tslt {display: inline; }
 .translate:hover .original, .translate .tslt {display: none; }
-
-/* CSS très spécifique pour les messages d'information uniquement */
-body .main:has(.main-head):has(.main-content) {
-    text-align: center !important;
-}
-
-body .main .main-head h2:contains("INFORMATIONS"),
-body .main .main-head h2:contains("Information") {
-    text-align: center !important;
-}
-
-body .main .main-content .message {
-    text-align: center !important;
-    padding: 15px !important;
-}
