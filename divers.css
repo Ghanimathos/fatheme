@@ -2,3 +2,20 @@
 .original {border-bottom: 2px dotted var(--pink);}
 .translate .original, .translate:hover .tslt {display: inline; }
 .translate:hover .original, .translate .tslt {display: none; }
+
+/* CSS très spécifique basé sur votre HTML */
+h1[class="page-title"] {
+    text-align: center !important;
+}
+
+/* Centrer le paragraphe qui suit directement le h1 */
+h1.page-title ~ p {
+    text-align: center !important;
+    padding: 15px !important;
+}
+
+/* Centrer les liens individuellement */
+h1.page-title ~ p a {
+    display: inline-block !important;
+    margin: 5px 10px !important;
+}
