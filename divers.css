@@ -1,0 +1,4 @@
+/***Traduction***/
+.original {border-bottom: 2px dotted var(--pink);}
+.translate .original, .translate:hover .tslt {display: inline; }
+.translate:hover .original, .translate .tslt {display: none; }
