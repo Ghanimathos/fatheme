@@ -3,9 +3,33 @@
 .translate .original, .translate:hover .tslt {display: inline; }
 .translate:hover .original, .translate .tslt {display: none; }
 
-/* Alternative si le logo est dans un autre conteneur */
+/* === CORRECTIONS BLANK THEME === */
+
+/* Masquer le logo ForumActif */
+#logo,
 .headerbar #logo,
 .headerbar .logo,
 #pun-head #pun-logo {
     display: none !important;
+}
+
+/* Centrer les messages de confirmation */
+.message-box,
+.message-text,
+#message-box {
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+}
+
+.message-box a,
+.message-text a {
+    display: inline-block !important;
+    margin: 5px 10px !important;
+}
+
+.message-box .center,
+.message-text .center {
+    text-align: center !important;
+    margin: 15px auto !important;
 }
