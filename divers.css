@@ -3,33 +3,39 @@
 .translate .original, .translate:hover .tslt {display: inline; }
 .translate:hover .original, .translate .tslt {display: none; }
 
-/* === CORRECTIONS BLANK THEME === */
+/* === CORRECTIONS SPÉCIFIQUES === */
 
-/* Masquer le logo ForumActif */
-#logo,
-.headerbar #logo,
-.headerbar .logo,
-#pun-head #pun-logo {
+/* Supprimer définitivement le logo ForumActif */
+#pun-head h1 span,
+#pun-head .pun-logo,
+.headerbar .logo img,
+#logo img,
+h1#pun-title span,
+#pun-head h1 {
     display: none !important;
+    background: none !important;
+    text-indent: -9999px !important;
+    height: 0 !important;
+    overflow: hidden !important;
 }
 
-/* Centrer les messages de confirmation */
-.message-box,
-.message-text,
-#message-box {
+/* Centrer complètement la boîte INFORMATIONS */
+.pun .main .main-content,
+.pun .main-content,
+.main-head h2,
+.main-head .h2 {
     text-align: center !important;
-    margin: 0 auto !important;
-    padding: 20px !important;
 }
 
-.message-box a,
-.message-text a {
-    display: inline-block !important;
-    margin: 5px 10px !important;
-}
-
-.message-box .center,
-.message-text .center {
+.main-content .message,
+.main-content p,
+.pun .main-content .message {
     text-align: center !important;
-    margin: 15px auto !important;
+    margin: 10px auto !important;
+}
+
+.main-content a {
+    display: block !important;
+    text-align: center !important;
+    margin: 5px auto !important;
 }
