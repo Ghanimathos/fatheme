@@ -1,7 +1,7 @@
 #sidebar {
     position: fixed;
     top: 80px; /* sous le module persona / header */
-    left: 200px; /* décalage depuis le bord gauche */
+    marging-left: 200px; /* décalage depuis le bord gauche */
     width: 260px;
     height: calc(100% - 100px);
     background: var(--neutralDark);
