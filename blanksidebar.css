@@ -1,12 +1,15 @@
 #sidebar {
     position: fixed;
-    top: 80px; /* sous le module persona / header */
+    top: 80px; /* sous le header */
     left: 200px; /* décalage depuis le bord gauche */
-    width: 460px;
+    width: 260px;
     height: calc(100% - 100px);
     background: var(--neutralDark);
     box-shadow: var(--shadowBox);
     z-index: 999;
-    transform: translateX(0); /* visible de base */
-    transition: transform 0.3s ease;
+
+    /* Bordure utilisant la variable */
+    border: var(--border);
+    border-radius: 8px; /* optionnel : coins arrondis */
+    padding: 20px;      /* espace interne */
 }
