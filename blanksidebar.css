@@ -1,36 +1,25 @@
-/* SIDEBAR */
 #sidebar {
-    position: fixed;         /* reste visible même en scroll */
-    top: 80px;               /* décale pour ne pas chevaucher persona / thème */
-    left: 0;
-    width: 250px;            /* largeur fixe */
-    max-height: calc(100% - 80px);
+    position: fixed;
+    top: 80px; /* sous le module persona / header */
+    left: 10px; /* décalage depuis le bord gauche */
+    width: 260px;
+    height: calc(100% - 100px);
     background: var(--neutralDark);
-    padding: 20px;
-    z-index: 999;
     box-shadow: var(--shadowBox);
-    overflow-y: auto;
+    z-index: 999;
+    transform: translateX(0); /* visible de base */
+    transition: transform 0.3s ease;
 }
 
-/* Contenu interne */
-#sidebar h2 {
-    color: var(--contrastLight);
-    font-size: 16px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-#sidebar .sidebar-content {
-    font-size: 12px;
-    color: var(--textColor);
-    line-height: 1.4;
-}
-
-/* Décalage responsive */
-@media (max-width: 900px) {
-    #sidebar {
-        width: 200px;
-        padding: 15px;
-        top: 70px; /* ajuste si le persona devient plus petit */
-    }
+#sidebar-trigger {
+    position: fixed;
+    top: 100px; /* aligné avec sidebar */
+    left: 280px; /* juste à droite de la sidebar */
+    background: var(--accentClr);
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000;
 }
