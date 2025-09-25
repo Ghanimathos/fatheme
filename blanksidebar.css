@@ -1,11 +1,10 @@
-#sidebar {
-    position: fixed !important;
-    top: 80px !important;
-    left: 200px !important;
-    width: 260px !important;
-    height: calc(100% - 100px) !important;
-    background: var(--neutralDark) !important;
-    border: var(--border) !important;
-    box-shadow: var(--shadowBox) !important;
-    z-index: 999 !important;
+#sidebar-test {
+    position: fixed;
+    top: 80px;
+    left: 200px;
+    width: 260px;
+    height: 400px;
+    background: red;
+    border: 2px solid yellow;
+    z-index: 9999;
 }
