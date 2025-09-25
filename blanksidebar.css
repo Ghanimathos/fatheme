@@ -1,7 +1,7 @@
 #sidebar {
     position: fixed;
     top: 80px; /* sous le module persona / header */
-    left: 10px; /* décalage depuis le bord gauche */
+    left: 100px; /* décalage depuis le bord gauche */
     width: 260px;
     height: calc(100% - 100px);
     background: var(--neutralDark);
@@ -9,17 +9,4 @@
     z-index: 999;
     transform: translateX(0); /* visible de base */
     transition: transform 0.3s ease;
-}
-
-#sidebar-trigger {
-    position: fixed;
-    top: 100px; /* aligné avec sidebar */
-    left: 280px; /* juste à droite de la sidebar */
-    background: var(--accentClr);
-    color: #fff;
-    border-radius: 5px;
-    padding: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    z-index: 1000;
 }
