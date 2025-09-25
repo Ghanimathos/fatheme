@@ -2,3 +2,20 @@
 .original {border-bottom: 2px dotted var(--pink);}
 .translate .original, .translate:hover .tslt {display: inline; }
 .translate:hover .original, .translate .tslt {display: none; }
+
+/***Balises TW***/
+/* Censure texte*/ 
+tw {
+ filter: blur(3px);
+ transition: filter .3s;
+}
+/* Censure image */
+img.tw {
+ filter: blur(10px);
+ clip-path: inset(0);
+ transition: filter .3s;
+}
+/* Retire le floutage au survol */
+tw:hover, .tw:hover {
+ filter: none;
+}
